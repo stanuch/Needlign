@@ -1,8 +1,6 @@
-# DNA Global Alignment CLI Tool
+# <img width="35" height="35" alt="image" src="https://github.com/user-attachments/assets/b053eabc-0f70-4dd3-a5e7-ebe586e15bf0" /> DNA Global Alignment CLI Tool
 
-[OBRAZEK]
-
-## Project Overview
+## 🗒️ Project Overview
 This project is a command-line tool for performing global alignment of DNA sequences using the Needleman-Wunsch algorithm. It allows users to:  
 
 - Load DNA sequences from FASTA files or manual input  
@@ -10,7 +8,7 @@ This project is a command-line tool for performing global alignment of DNA seque
 - Calculate matches, mismatches, gaps, and identity percentage 
 - Visualize the alignment in the terminal (CLI)    
 
-## Key Features
+## 🔑 Key Features
 - FASTA file input: Supports standard DNA sequence files  
 - Global alignment: Implements Needleman-Wunsch algorithm for full-sequence comparison  
 - Scoring system: Match, mismatch, and gap penalties  
@@ -22,6 +20,6 @@ This project is a command-line tool for performing global alignment of DNA seque
 - Optional visualization: Color-highlight mismatches and gaps in terminal  
 - Extensible: Can later be adapted for RNA or protein sequences  
 
-## Needleman-Wunsch Algorithm
+## 👾 Needleman-Wunsch Algorithm
 
 [DESCRIPTION]
