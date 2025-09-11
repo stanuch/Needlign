@@ -13,7 +13,11 @@ def print_sequences(file_path, label):
         print(f"ID: {record.id}")
         print(f"Seqence: {record.seq}\n")
 
+def cls():
+    os.system('cls' if os.name=='nt' else 'clear')
+
 def main():
+    cls()
     base_dir = os.path.dirname(os.path.abspath(__file__)) # main.py path
 
     seq1_filename = input("Enter the name of sequence 1 file (without extension): ")

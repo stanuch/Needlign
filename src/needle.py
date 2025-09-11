@@ -2,14 +2,12 @@ import numpy as np
 from Bio.Align import substitution_matrices
 
 def needleman_wunsch(seq1, seq2, matrix_name="BLOSUM62", gap_open=-10, gap_extend=-0.5):
-    # Load substitution matrix
     matrix = substitution_matrices.load(matrix_name)
     
     n, m = len(seq1)+1, len(seq2)+1
     score = np.zeros((n, m))
     traceback = np.zeros((n, m), dtype=int)  # 0=diag, 1=up, 2=left
 
-    # Initialize first row/column
     for i in range(1, n):
         score[i][0] = gap_open + (i-1)*gap_extend
         traceback[i][0] = 1
@@ -17,7 +15,6 @@ def needleman_wunsch(seq1, seq2, matrix_name="BLOSUM62", gap_open=-10, gap_exten
         score[0][j] = gap_open + (j-1)*gap_extend
         traceback[0][j] = 2
 
-    # Fill matrix
     for i in range(1, n):
         for j in range(1, m):
             match_score = matrix[seq1[i-1], seq2[j-1]]
@@ -28,7 +25,6 @@ def needleman_wunsch(seq1, seq2, matrix_name="BLOSUM62", gap_open=-10, gap_exten
             score[i][j] = max_score
             traceback[i][j] = [diag, up, left].index(max_score)
 
-    # Traceback
     aligned1, aligned2 = "", ""
     i, j = len(seq1), len(seq2)
     while i>0 or j>0:
