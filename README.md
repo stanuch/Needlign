@@ -18,9 +18,7 @@ This project is a command-line tool for performing global alignment of DNA seque
   - Number of matches  
   - Number of mismatches  
   - Number of gaps  
-  - % identity between sequences  
-- Optional visualization: Color-highlight mismatches and gaps in terminal  
-- Extensible: Can later be adapted for RNA or protein sequences  
+  - % identity between sequences
 
 ## 👾 Needleman-Wunsch Algorithm
 
@@ -59,6 +57,7 @@ python src/main.py
 
 ## ✅ To-Do
 - More alignment statistics
+- Advanced alignment visualization
 - Graphical User Interface (GUI)
 - Reading different file formats
 - Ability to use many substitution matrices
