@@ -12,8 +12,8 @@ This project is a command-line tool for performing global alignment of DNA seque
 
 ## 🔑 Key Features
 - FASTA file input: Supports standard DNA sequence files  
-- Global alignment: Implements Needleman-Wunsch algorithm for full-sequence comparison  
-- Scoring system: Match, mismatch, and gap penalties  
+- Global alignment: Implements simplified Needleman-Wunsch algorithm for full-sequence comparison  
+- Scoring system: Match, mismatch, and gap penalties, substitution matrix (BLOSUM62) 
 - Alignment statistics:
   - Number of matches  
   - Number of mismatches  
@@ -54,3 +54,11 @@ python src/main.py
 - Mount, D.W. (2004). Bioinformatics: Sequence and Genome Analysis. Cold Spring Harbor Laboratory Press.
 - EMBOSS Needle tool: https://www.ebi.ac.uk/jdispatcher/psa/emboss_needle
 - Biopython Documentation: https://biopython.org/wiki/Documentation
+- Simplified Needleman-Wunsch Algorithm inspired by: https://gist.github.com/slowkow/06c6dba9180d013dfd82bec217d22eb5
+
+
+## ✅ To-Do
+- More alignment statistics
+- Graphical User Interface (GUI)
+- Reading different file formats
+- Ability to use many substitution matrices
