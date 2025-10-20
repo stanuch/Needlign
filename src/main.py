@@ -1,6 +1,6 @@
 import os
-from fasta_read import read_fasta
-from needle import needleman_wunsch
+from .fasta_read import read_fasta
+from .needle import needleman_wunsch
 from Bio import SeqIO
 
 def get_file_path(base_dir, filename):
@@ -24,6 +24,9 @@ def similarity_percentage(seq1, seq2):
     min_length = len(short_seq)
     max_length = len(long_seq)
     max_similarity_count = 0
+
+    if min_length == 0:
+        return 0.0
 
     for i in range(max_length - min_length + 1):
         current_similarity_count = 0
