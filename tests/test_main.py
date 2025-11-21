@@ -1,4 +1,3 @@
-# in tests/test_main.py
 from src.main import similarity_percentage
 
 def test_similarity_100_percent():
@@ -8,7 +7,6 @@ def test_similarity_100_percent():
     assert similarity_percentage(short_seq, long_seq) == 100
 
 def test_similarity_no_match():
-    # Test your original example that had 0%
     seq1 = "GACTGACT"
     seq2 = "ACTGACTG"
     assert similarity_percentage(seq1, seq2) == 0
