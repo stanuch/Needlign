@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/needlign_logo.png" alt="Needlign Logo" width="500">
+  <img src="img/needlign_logo.png" alt="Needlign Logo" width="700">
 </p>
 
 This project is a command-line bioinformatics tool for global alignment of DNA and protein sequences using the Needleman–Wunsch algorithm. It enables full-length sequence comparison based on dynamic programming and a configurable scoring system.
