@@ -1,17 +1,16 @@
-# Needlign
+<p align="center">
+  <img src="img/needlign_logo.png" alt="Needlign Logo" width="500">
+</p>
+
+This project is a command-line bioinformatics tool for global alignment of DNA and protein sequences using the Needleman–Wunsch algorithm. It enables full-length sequence comparison based on dynamic programming and a configurable scoring system.
+
+The application reads input sequences from FASTA files, parses sequence data and performs global alignment. The scoring system supports user-selectable substitution matrices provided by BioPython (e.g. BLOSUM62), along with configurable gap penalties and match/mismatch scores.
 
 ![License](https://img.shields.io/badge/License-MIT-green) 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=Python) 
 ![Status](https://img.shields.io/badge/status-functional-success)
 ![Stage](https://img.shields.io/badge/stage-proof_of_concept-orange)
 ![Last Commit](https://img.shields.io/github/last-commit/stanuch/Needlign)
-
-## Project Overview
-This project is a command-line tool for performing global alignment of DNA or protein sequences using the Needleman-Wunsch algorithm. It allows users to:  
-
-- Load sequences using FASTA format
-- Perform global alignment between two sequences
-- Read and display info included in FASTA files
 
 ## Key Features
 - FASTA file input: Supports standard DNA/protein sequence files  
